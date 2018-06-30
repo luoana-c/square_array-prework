@@ -1,4 +1,7 @@
 def square_array(array)
+  new = []
   array.each do |item|
-    item**2 
+    new.inject(item**2)
+  end
+  new
 end
